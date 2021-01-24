@@ -1,0 +1,28 @@
+﻿<html>
+<head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto Slab', sans-serif;
+            padding: 32px
+        }
+    </style>
+</head>
+<body>
+    <img src="https://growiz.com.br/wp-content/uploads/2020/06/Growiz-Logo-1.png" alt="Growiz - Jornada do Programador" width="200" />
+    <h3>@Model.Product.Name</h3>
+    <p>
+        @Model.Product.Description
+    </p>
+
+    <strong>Preço atual</strong>
+    <p>
+        @Model.Product.Price.ToString("C2")
+    </p>
+
+    @Raw(Model.Chart)
+</body>
+</html>
